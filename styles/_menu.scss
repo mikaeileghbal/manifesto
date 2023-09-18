@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.6em;
+  right: 40px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu-burger {
+  //background-color: red;
+  padding: 0.8em;
+
+  span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 6px;
+    background-color: #ffffff;
+  }
+}

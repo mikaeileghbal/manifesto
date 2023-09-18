@@ -1,3 +1,7 @@
+.nopointer {
+  pointer-events: none;
+}
+
 h1 {
   text-transform: uppercase;
   text-align: center;
@@ -5,7 +9,6 @@ h1 {
   letter-spacing: -2px;
   transform: scaleX(1.1);
   max-width: 100%;
-  pointer-events: none;
 }
 
 .text-thin {
@@ -16,4 +19,24 @@ h1 {
 .text-bold {
   font-size: 6rem;
   font-weight: 900;
+}
+
+.hero-description {
+  font-family: "Poppins", sans-serif;
+  padding-left: 50%;
+  margin-top: 30px;
+
+  span {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+}
+
+.menu-text {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
 }

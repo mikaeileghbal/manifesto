@@ -9,3 +9,18 @@ function moveMouseTail(e) {
   mouseTail.style.left = `${e.clientX}px`;
   mouseTail.style.top = `${e.clientY}px`;
 }
+
+const menu = document.querySelector(".menu");
+
+menu.addEventListener("mouseenter", menuMouseEnter);
+menu.addEventListener("mouseleave", menuMouseLeave);
+
+function menuMouseEnter(e) {
+  console.log("entered");
+  mouseTail.classList.add("menu");
+}
+
+function menuMouseLeave(e) {
+  console.log("left");
+  mouseTail.classList.remove("menu");
+}

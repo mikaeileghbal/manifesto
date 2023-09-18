@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@200;300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 :root {
   --background: #0c0c0c;
   --pointer: #9b9e9b;
@@ -19,6 +20,10 @@ body {
   color: #ffffff;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -37,6 +42,16 @@ body {
   pointer-events: none;
   transition: left 0.2s ease-out, top 0.2s ease-out, width 0.4s, height 0.4s;
 }
+.mouse-tail.menu {
+  border-color: rgb(133, 83, 83);
+  width: 70px;
+  height: 70px;
+}
+
+.nopointer {
+  pointer-events: none;
+}
+
 h1 {
   text-transform: uppercase;
   text-align: center;
@@ -44,7 +59,6 @@ h1 {
   letter-spacing: -2px;
   transform: scaleX(1.1);
   max-width: 100%;
-  pointer-events: none;
 }
 
 .text-thin {
@@ -57,6 +71,25 @@ h1 {
   font-weight: 900;
 }
 
+.hero-description {
+  font-family: "Poppins", sans-serif;
+  padding-left: 50%;
+  margin-top: 30px;
+}
+.hero-description span {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.menu-text {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 header {
   height: 100px;
 }
@@ -65,6 +98,26 @@ header .container {
   justify-content: space-between;
   align-items: center;
   height: inherit;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.6em;
+  right: 40px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.menu-burger {
+  padding: 0.8em;
+}
+.menu-burger span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  margin: 6px;
+  background-color: #ffffff;
 }
 
 .hero {
