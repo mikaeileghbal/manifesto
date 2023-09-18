@@ -18,6 +18,10 @@ body {
   color: #ffffff;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
