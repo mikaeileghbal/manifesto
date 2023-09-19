@@ -103,6 +103,12 @@ header .container {
   align-items: center;
   height: inherit;
 }
+header .logo {
+  width: 42px;
+}
+header .logo img {
+  width: 100%;
+}
 
 .menu {
   display: flex;
@@ -119,7 +125,7 @@ header .container {
 }
 .menu > .menu-text span {
   height: 100%;
-  padding: 4px 0;
+  padding: 4px 0 8px;
   transition: transform 0.14s ease-in;
 }
 .menu:hover > .menu-text > span {
@@ -140,7 +146,7 @@ header .container {
 .hero {
   max-width: 90vw;
   margin: 0 auto;
-  margin-top: 7vh;
+  margin-top: 20vh;
 }
 .hero .hero-image {
   -webkit-clip-path: inset(0% 32%);

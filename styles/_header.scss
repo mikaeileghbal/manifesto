@@ -10,4 +10,12 @@ header {
     align-items: center;
     height: inherit;
   }
+
+  .logo {
+    width: 42px;
+
+    img {
+      width: 100%;
+    }
+  }
 }
