@@ -83,7 +83,8 @@ h1 {
   line-height: 1.45;
 }
 
-.menu-text {
+.menu-text span {
+  display: block;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   font-weight: 500;
@@ -92,6 +93,9 @@ h1 {
 
 header {
   height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 header .container {
   display: flex;
@@ -107,6 +111,19 @@ header .container {
   right: 40px;
   position: absolute;
   cursor: pointer;
+}
+.menu .menu-text {
+  overflow: hidden;
+  height: 30px;
+  padding: 1px;
+}
+.menu > .menu-text span {
+  height: 100%;
+  padding: 4px 0;
+  transition: transform 0.14s ease-in;
+}
+.menu:hover > .menu-text > span {
+  transform: translateY(-100%);
 }
 
 .menu-burger {
@@ -124,4 +141,19 @@ header .container {
   max-width: 90vw;
   margin: 0 auto;
   margin-top: 7vh;
+}
+.hero .hero-image {
+  -webkit-clip-path: inset(0% 32%);
+          clip-path: inset(0% 32%);
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 5em;
+}
+.hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=index.css.map */

@@ -35,8 +35,11 @@ h1 {
 }
 
 .menu-text {
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 14px;
+  span {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+  }
 }
