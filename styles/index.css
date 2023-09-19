@@ -83,7 +83,8 @@ h1 {
   line-height: 1.45;
 }
 
-.menu-text {
+.menu-text span {
+  display: block;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   font-weight: 500;
@@ -107,6 +108,19 @@ header .container {
   right: 40px;
   position: absolute;
   cursor: pointer;
+}
+.menu .menu-text {
+  overflow: hidden;
+  height: 30px;
+  padding: 1px;
+}
+.menu > .menu-text span {
+  height: 100%;
+  padding: 4px 0;
+  transition: transform 0.14s ease-in;
+}
+.menu:hover > .menu-text > span {
+  transform: translateY(-100%);
 }
 
 .menu-burger {
