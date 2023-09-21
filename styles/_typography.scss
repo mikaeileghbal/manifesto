@@ -43,3 +43,16 @@ h1 {
     font-size: 14px;
   }
 }
+
+.hero-text {
+  padding: 40px;
+  text-align: center;
+
+  h2 {
+    font-size: calc(1rem + 3vw);
+    line-height: calc(1rem + 3.5vw);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-space);
+    transform: scale(1.1);
+  }
+}

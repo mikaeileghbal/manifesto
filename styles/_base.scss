@@ -1,6 +1,7 @@
 :root {
   --background: #0c0c0c;
   --pointer: #9b9e9b;
+  --letter-space: -1px;
 }
 
 *,
@@ -16,6 +17,7 @@ body {
   font-family: "Almarai", sans-serif;
   background-color: var(--background);
   color: #ffffff;
+  letter-spacing: var(--letter-space);
 }
 
 ::-webkit-scrollbar {

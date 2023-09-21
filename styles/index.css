@@ -3,6 +3,7 @@
 :root {
   --background: #0c0c0c;
   --pointer: #9b9e9b;
+  --letter-space: -1px;
 }
 
 *,
@@ -18,6 +19,7 @@ body {
   font-family: "Almarai", sans-serif;
   background-color: var(--background);
   color: #ffffff;
+  letter-spacing: var(--letter-space);
 }
 
 ::-webkit-scrollbar {
@@ -91,11 +93,24 @@ h1 {
   font-size: 14px;
 }
 
+.hero-text {
+  padding: 40px;
+  text-align: center;
+}
+.hero-text h2 {
+  font-size: calc(1rem + 3vw);
+  line-height: calc(1rem + 3.5vw);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-space);
+  transform: scale(1.1);
+}
+
 header {
   height: 100px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
+  z-index: 10;
 }
 header .container {
   display: flex;
@@ -126,7 +141,7 @@ header .logo img {
 .menu > .menu-text span {
   height: 100%;
   padding: 4px 0 8px;
-  transition: transform 0.14s ease-in;
+  transition: transform 0.16s ease-out;
 }
 .menu:hover > .menu-text > span {
   transform: translateY(-100%);
@@ -141,6 +156,46 @@ header .logo img {
   height: 2px;
   margin: 6px;
   background-color: #ffffff;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu .nav-list {
+  max-width: 70%;
+  background-color: green;
+  list-style-type: none;
+  padding: 0 2em;
+}
+.nav-menu .nav-list .nav-item {
+  text-align: center;
+}
+.nav-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: calc(1rem + 5.15vw);
+  line-height: 120px;
+}
+.nav-menu a span {
+  display: block;
+  font-size: 60px;
+}
+.nav-menu a span:first-child {
+  font-weight: 900;
+}
+.nav-menu a span:last-child {
+  font-weight: 200;
+  transform: rotateX(-90deg);
 }
 
 .hero {
