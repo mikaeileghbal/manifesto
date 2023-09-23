@@ -169,6 +169,7 @@ header .logo img {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .nav-menu .nav-list {
   max-width: 70%;
@@ -178,19 +179,22 @@ header .logo img {
 }
 .nav-menu .nav-list .nav-item {
   text-align: center;
+  overflow: hidden;
+  background-color: lightblue;
 }
 .nav-menu a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-size: calc(1rem + 5.15vw);
-  line-height: 120px;
+  background-color: lightcoral;
 }
 .nav-menu a span {
   display: block;
   font-size: 60px;
 }
 .nav-menu a span:first-child {
+  transform: translateY(140px);
   font-weight: 900;
 }
 .nav-menu a span:last-child {
