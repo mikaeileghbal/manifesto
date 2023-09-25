@@ -47,7 +47,7 @@ const menuTimelineReverse = gsap.timeline({
 const menuAnimationReverse = menuTimelineReverse
   .to(".nav-item .menu-first", {
     y: "-100%",
-    duration: 0.5,
+    duration: 0.6,
     ease: "power4.easeOut",
     //delay: 0.5,
     stagger: 0.06,
@@ -55,6 +55,7 @@ const menuAnimationReverse = menuTimelineReverse
   .to(".nav-menu", {
     opacity: 0,
     duration: 0.3,
+    delay: -0.3,
   });
 
 //const menuTimelineR = gsap.timeline({});
