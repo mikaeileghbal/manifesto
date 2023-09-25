@@ -22,8 +22,8 @@
       overflow: hidden;
       line-height: 50px;
       height: 120px;
-      background-color: lightblue;
-      border: 1px solid red;
+      //background-color: lightblue;
+      // border: 1px solid red;
     }
   }
 
@@ -41,13 +41,13 @@
       &:first-child {
         transform: translateY(140px);
         font-weight: 900;
-        background-color: lightcoral;
+        //background-color: lightcoral;
       }
 
       &:last-child {
         font-weight: 200;
         transform: rotateX(-90deg);
-        background-color: green;
+        //background-color: green;
       }
     }
   }

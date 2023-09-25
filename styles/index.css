@@ -181,8 +181,6 @@ header .logo img {
   overflow: hidden;
   line-height: 50px;
   height: 120px;
-  background-color: lightblue;
-  border: 1px solid red;
 }
 .nav-menu a {
   text-decoration: none;
@@ -198,12 +196,10 @@ header .logo img {
 .nav-menu a span:first-child {
   transform: translateY(140px);
   font-weight: 900;
-  background-color: lightcoral;
 }
 .nav-menu a span:last-child {
   font-weight: 200;
   transform: rotateX(-90deg);
-  background-color: green;
 }
 
 .hero {
