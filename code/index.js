@@ -33,7 +33,7 @@ const menuAnimation = menuTimeline
     opacity: 1,
     duration: 0.3,
   })
-  .to(".nav-item .menu-first", {
+  .to(".nav-item>a", {
     y: 0,
     duration: 0.6,
     ease: "power4.easeOut",
@@ -44,18 +44,19 @@ const menuAnimation = menuTimeline
 const menuTimelineReverse = gsap.timeline({
   paused: true,
 });
+
 const menuAnimationReverse = menuTimelineReverse
-  .to(".nav-item .menu-first", {
+  .to(".nav-item>a", {
     y: "-100%",
     duration: 0.6,
-    ease: "power4.easeOut",
+    ease: "power4.in",
     //delay: 0.5,
-    stagger: 0.06,
+    stagger: 0.1,
   })
   .to(".nav-menu", {
     opacity: 0,
     duration: 0.3,
-    delay: -0.3,
+    delay: -0.1,
   });
 
 //const menuTimelineR = gsap.timeline({});

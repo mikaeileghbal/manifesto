@@ -42,7 +42,7 @@ body {
   border-radius: 50%;
   z-index: 5000;
   pointer-events: none;
-  transition: left 0.2s ease-out, top 0.2s ease-out, width 0.4s, height 0.4s;
+  transition: left 0.2s ease-out 0s, top 0.2s ease-out 0s, width 0.4s 0s, height 0.4s 0s;
 }
 .mouse-tail.menu {
   border-color: rgb(133, 83, 83);
@@ -183,10 +183,13 @@ header .logo img {
   height: 120px;
 }
 .nav-menu a {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-size: calc(1rem + 5.15vw);
+  transform: translateY(140px);
+  background-color: green;
 }
 .nav-menu a span {
   display: block;
@@ -194,12 +197,25 @@ header .logo img {
   line-height: 120px;
 }
 .nav-menu a span:first-child {
-  transform: translateY(140px);
   font-weight: 900;
 }
 .nav-menu a span:last-child {
   font-weight: 200;
-  transform: rotateX(-90deg);
+}
+
+.scene {
+  position: relative;
+  background-color: red;
+  perspective: 600px;
+}
+.scene .cube {
+  transform-style: preserve-3d;
+}
+.scene .cube .a {
+  transform: rotateX(0deg);
+}
+.scene .cube .b {
+  transform: rotateX(90deg);
 }
 
 .hero {

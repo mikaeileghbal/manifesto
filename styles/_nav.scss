@@ -28,10 +28,13 @@
   }
 
   a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
     font-size: calc(1rem + 5.15vw);
+    transform: translateY(140px);
+    background-color: green;
 
     span {
       display: block;
@@ -39,16 +42,30 @@
       line-height: 120px;
 
       &:first-child {
-        transform: translateY(140px);
         font-weight: 900;
         //background-color: lightcoral;
       }
 
       &:last-child {
         font-weight: 200;
-        transform: rotateX(-90deg);
         //background-color: green;
       }
+    }
+  }
+}
+
+.scene {
+  position: relative;
+  background-color: red;
+  perspective: 600px;
+
+  .cube {
+    transform-style: preserve-3d;
+    .a {
+      transform: rotateX(0deg);
+    }
+    .b {
+      transform: rotateX(90deg);
     }
   }
 }
