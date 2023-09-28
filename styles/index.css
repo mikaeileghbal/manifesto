@@ -172,7 +172,7 @@ header .logo img {
   opacity: 0;
 }
 .nav-menu .nav-list {
-  max-width: 70%;
+  max-width: 75%;
   list-style-type: none;
   padding: 0 2em;
 }
@@ -189,7 +189,6 @@ header .logo img {
   color: white;
   font-size: calc(1rem + 5.15vw);
   transform: translateY(140px);
-  background-color: green;
 }
 .nav-menu a span {
   display: block;
@@ -201,21 +200,7 @@ header .logo img {
 }
 .nav-menu a span:last-child {
   font-weight: 200;
-}
-
-.scene {
-  position: relative;
-  background-color: red;
-  perspective: 600px;
-}
-.scene .cube {
-  transform-style: preserve-3d;
-}
-.scene .cube .a {
-  transform: rotateX(0deg);
-}
-.scene .cube .b {
-  transform: rotateX(90deg);
+  opacity: 0;
 }
 
 .hero {

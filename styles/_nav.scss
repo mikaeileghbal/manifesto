@@ -12,7 +12,7 @@
   opacity: 0;
 
   .nav-list {
-    max-width: 70%;
+    max-width: 75%;
     //background-color: green;
     list-style-type: none;
     padding: 0 2em;
@@ -34,7 +34,6 @@
     color: white;
     font-size: calc(1rem + 5.15vw);
     transform: translateY(140px);
-    background-color: green;
 
     span {
       display: block;
@@ -43,29 +42,15 @@
 
       &:first-child {
         font-weight: 900;
+
         //background-color: lightcoral;
       }
 
       &:last-child {
         font-weight: 200;
+        opacity: 0;
         //background-color: green;
       }
-    }
-  }
-}
-
-.scene {
-  position: relative;
-  background-color: red;
-  perspective: 600px;
-
-  .cube {
-    transform-style: preserve-3d;
-    .a {
-      transform: rotateX(0deg);
-    }
-    .b {
-      transform: rotateX(90deg);
     }
   }
 }
